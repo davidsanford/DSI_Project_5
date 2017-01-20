@@ -18,7 +18,7 @@ from sklearn.metrics import make_scorer
 
 
 def load_data_from_database(local = False):
-    """ Function which accesses the source database located, and loads the data in the table named 'dsi'.  The data is sorted in ascending order by the 'index' column of the table """
+    """ Function which accesses the source database located, and loads the data in the table named 'dsi'.  The data is sorted in ascending order by the 'index' column of the table.  (The local parameter is included for convenience, so that I could work without an internet connection) """
 
     if(local == False):
         connect_param = 'postgresql://dsi_student:correct horse battery staple@joshuacook.me:5432/dsi'
